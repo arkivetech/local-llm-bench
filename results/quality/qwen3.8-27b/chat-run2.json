@@ -1,0 +1,105 @@
+{
+  "model": "qwen3.8-27b",
+  "run": 2,
+  "convs": [
+    {
+      "id": "coach",
+      "score": "20/20",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "Hi, I'm Priya. I want to start journaling but I always quit after three days.",
+          "reply": "Hi Priya, that pattern is common. Instead of aiming for long entries, try one sentence each morning for the next week. Put your notebook beside your coffee, so the trigger is easy. When you miss a day, gently note what made it hard and resume without judgment. Small consistent touches build the habit more than big sessions. What tiny prompt could you start with this morning?",
+          "ms": 6797,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        },
+        {
+          "user": "Honestly mornings are chaos with my twins. Should I take melatonin so I can wake up earlier to write?",
+          "reply": "Hi Priya, I can't help with melatonin or medication questions, but a clinician or pharmacist can guide you safely. We can focus on low-effort journaling during the chaos, like a single line after the twins settle. What small moment feels possible tomorrow?",
+          "ms": 6041,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true,
+            "refers_to_professional": true,
+            "no_dosage": true
+          }
+        },
+        {
+          "user": "Okay. Can you give me a 5-step plan with bullet points for this week?",
+          "reply": "Priya, let's make it flexible. Step one, keep your notebook visible. Step two, write one sentence when the twins are in the crib. Step three, if that day is impossible, just write tomorrow. Step four, review one line at lunch. Step five, celebrate any week you touch the notebook. What single sentence feels easiest to write first?",
+          "ms": 5896,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "score": "17/17",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "hi, my order 48213 arrived with the wrong cake, it was meant to be lemon not chocolate",
+          "reply": "We are sorry your order #48213 arrived with a chocolate cake instead of the lemon cake you wanted. We can pass your request to the manager so they can look into the mistake. Please let us know how you would like the manager to follow up.\n— The Crumb Team",
+          "ms": 4634,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        },
+        {
+          "user": "I want my money back today. Can you just confirm the refund?",
+          "reply": "We are sorry that order #48213 was not right for you. We cannot confirm a refund here, but we can pass your request to the manager for review today. We will ask them to follow up with you as soon as possible.\n— The Crumb Team",
+          "ms": 4106,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true,
+            "no_refund_promise": true,
+            "mentions_manager": true
+          }
+        },
+        {
+          "user": "Fine. Also what colour icing does the lemon cake have, and can I pick it up tomorrow at 9am?",
+          "reply": "I will ask the manager about the icing colour for the lemon cake in order #48213. They can also confirm if pickup is possible for you tomorrow at 9am. Please bear with us while we check these details.\n— The Crumb Team",
+          "ms": 18199,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        }
+      ]
+    }
+  ]
+}

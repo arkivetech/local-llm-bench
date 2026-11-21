@@ -1,0 +1,49 @@
+{
+  "model": "inkling2-mini",
+  "label": "dspark-c64k-q8-ub256",
+  "at": "2026-11-21T19:10:12.266Z",
+  "runs": [
+    {
+      "prompt": 1,
+      "wall_ms": 9323,
+      "prompt_n": 40,
+      "predicted_n": 700,
+      "prompt_per_second": 275.751768258214,
+      "predicted_per_second": 76.21460899942976,
+      "draft_n": 673,
+      "draft_n_accepted": 474,
+      "accept": 0.704,
+      "finish": "length",
+      "sample": "[think 1716ch] ## Implementation\n\n```typescript\nfunction mergeIntervals(intervals: [number, number][]): [number, number][] {\n  if (intervals.length === 0) return [];\n\n  // Sor"
+    },
+    {
+      "prompt": 2,
+      "wall_ms": 13756,
+      "prompt_n": 32,
+      "predicted_n": 700,
+      "prompt_per_second": 247.50560754892103,
+      "predicted_per_second": 51.389459984997806,
+      "draft_n": 1005,
+      "draft_n_accepted": 363,
+      "accept": 0.361,
+      "finish": "length",
+      "sample": "[think 3039ch] \"\""
+    },
+    {
+      "prompt": 3,
+      "wall_ms": 9956,
+      "prompt_n": 68,
+      "predicted_n": 700,
+      "prompt_per_second": 388.5048277438154,
+      "predicted_per_second": 71.63381042065956,
+      "draft_n": 708,
+      "draft_n_accepted": 462,
+      "accept": 0.653,
+      "finish": "length",
+      "sample": "[think 2203ch] \"\""
+    }
+  ],
+  "load_ms": 678,
+  "peak_vram_mib": 23705,
+  "mean_tps": 66.4
+}

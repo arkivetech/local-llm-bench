@@ -1,0 +1,11 @@
+0.00.601.284 W load: special_eos_id is not in special_eog_ids - the tokenizer config may be incorrect
+1.02.602.461 I cmn          init: llama threadpool init, n_threads = 8
+1.02.977.576 I 
+1.02.980.191 I system_info: n_threads = 8 (n_threads_batch = 8) / 16 | CUDA : ARCHS = 860 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+1.02.980.489 I perplexity: tokenizing the input ..
+1.05.071.936 I perplexity: tokenization took 2091.44 ms
+1.05.071.987 I perplexity: calculating perplexity over 8 chunks, n_ctx=512, batch_size=512, n_seq=1
+1.05.702.200 I perplexity: 0.63 seconds per pass - ETA 0.08 minutes
+[1]2.8968,[2]4.3298,[3]4.4774,[4]4.5439,[5]4.5304,[6]4.3955,[7]4.5830,[8]4.4037,
+1.08.755.148 I Final estimate: PPL = 4.4037 +/- 0.21703
+

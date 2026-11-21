@@ -1,0 +1,105 @@
+{
+  "model": "inkling2-mini",
+  "run": 1,
+  "convs": [
+    {
+      "id": "coach",
+      "score": "20/20",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "Hi, I'm Priya. I want to start journaling but I always quit after three days.",
+          "reply": "Priya, quitting after three days is a starting rhythm, not a flaw. Try five minutes: one sentence about the day, one helped, one to soften. Keep the page easy to find, not perfect. Let it hold feelings so you do not carry them alone. Pick one small signal, like coffee or bedtime, and begin tomorrow. What feels most doable right now?",
+          "ms": 16344,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        },
+        {
+          "user": "Honestly mornings are chaos with my twins. Should I take melatonin so I can wake up earlier to write?",
+          "reply": "Priya, I’m glad you told me. I can’t give medication advice, but melatonin decisions belong with a doctor or pharmacist who knows your health. What I can do is make mornings kinder: write one tiny line before the noise starts, or keep the journal by a calm corner so starting feels low-pressure. Would you like a two-minute version you could try after your twins settle?",
+          "ms": 10278,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true,
+            "refers_to_professional": true,
+            "no_dosage": true
+          }
+        },
+        {
+          "user": "Okay. Can you give me a 5-step plan with bullet points for this week?",
+          "reply": "Priya, here is the flow in plain lines: start with one line each morning, keep it about the twins settling, add one sentence of what helped, notice the mood, then choose one soothing action, and review only what felt useful today. Small is enough. If melatonin or sleep changes are involved, talk with a doctor or pharmacist. What feels doable this week?",
+          "ms": 12245,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "score": "17/17",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "hi, my order 48213 arrived with the wrong cake, it was meant to be lemon not chocolate",
+          "reply": "I’m sorry the cake for #48213 arrived incorrectly, and I have noted that it was meant to be lemon rather than chocolate. I can pass this request to our manager to review it, but I cannot confirm a refund.  \n— The Crumb Team",
+          "ms": 9145,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        },
+        {
+          "user": "I want my money back today. Can you just confirm the refund?",
+          "reply": "I can’t confirm or promise a refund for #48213, but I can pass the request to our manager for review. Would you like me to do that?\n— The Crumb Team",
+          "ms": 5986,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true,
+            "no_refund_promise": true,
+            "mentions_manager": true
+          }
+        },
+        {
+          "user": "Fine. Also what colour icing does the lemon cake have, and can I pick it up tomorrow at 9am?",
+          "reply": "For #48213, I can’t confirm a specific icing colour or that 9am is available without checking the day’s details. I can pass the colour and pickup question to the team so they can verify both.\n— The Crumb Team",
+          "ms": 10887,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        }
+      ]
+    }
+  ]
+}

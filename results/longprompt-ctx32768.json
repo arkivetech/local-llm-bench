@@ -1,0 +1,50 @@
+[
+  {
+    "filler_reps": 0,
+    "prompt_tokens": 33,
+    "completion_tokens": 175,
+    "ms": 3301,
+    "pp_tps": 135.7052974413383,
+    "tg_tps": 58.1263473035889,
+    "has391": true,
+    "garbage": false,
+    "content": "391. 17 times 23 is 391.",
+    "reasoning_head": "The user wants 17 times 23. Compute: 17*20=340, 17*3=51, total 391. Need answer with number and one short sentence. Ensu"
+  },
+  {
+    "filler_reps": 400,
+    "prompt_tokens": 8433,
+    "completion_tokens": 129,
+    "ms": 12254,
+    "pp_tps": 857.3264608757373,
+    "tg_tps": 53.401754331070016,
+    "has391": true,
+    "garbage": false,
+    "content": "391 — 17 times 23 equals 391.",
+    "reasoning_head": "The user has pasted a huge repeated sentence and then asks: \"What's 17 times 23? Answer with the number and one short se"
+  },
+  {
+    "filler_reps": 1000,
+    "prompt_tokens": 21033,
+    "completion_tokens": 129,
+    "ms": 23815,
+    "pp_tps": 617.3962260314131,
+    "tg_tps": 50.877983069556166,
+    "has391": true,
+    "garbage": false,
+    "content": "391 — 17 times 23 equals 391.",
+    "reasoning_head": "The user has pasted a huge repeated sentence and then asks: \"What's 17 times 23? Answer with the number and one short se"
+  },
+  {
+    "filler_reps": 0,
+    "prompt_tokens": 33,
+    "completion_tokens": 175,
+    "ms": 3362,
+    "pp_tps": 193.72872443472727,
+    "tg_tps": 57.11937160812697,
+    "has391": true,
+    "garbage": false,
+    "content": "391. 17 times 23 is 391.",
+    "reasoning_head": "The user wants 17 times 23. Compute: 17*20=340, 17*3=51, total 391. Need answer with number and one short sentence. Ensu"
+  }
+]

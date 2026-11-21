@@ -1,0 +1,43 @@
+{
+  "model": "inkling2-mini",
+  "label": "mainline",
+  "at": "2026-11-21T15:59:09.280Z",
+  "runs": [
+    {
+      "prompt": 1,
+      "wall_ms": 12388,
+      "prompt_n": 40,
+      "predicted_n": 700,
+      "prompt_per_second": 290.67021284326336,
+      "predicted_per_second": 57.091350080564965,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 1609ch] \"\""
+    },
+    {
+      "prompt": 2,
+      "wall_ms": 12496,
+      "prompt_n": 32,
+      "predicted_n": 700,
+      "prompt_per_second": 252.0022365198491,
+      "predicted_per_second": 56.68915390505143,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 2895ch] \"\""
+    },
+    {
+      "prompt": 3,
+      "wall_ms": 12569,
+      "prompt_n": 68,
+      "predicted_n": 700,
+      "prompt_per_second": 414.7884274028755,
+      "predicted_per_second": 56.57547439425595,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 1629ch] [\n  {\"name\": \"Ana\", \"day\": \"Monday\", \"time\": \"7:30\"},\n  {\"name\": \"Ben\", \"day\": \"Wednesday\", \"time\": \"21:00\"},\n  {\"name\": \"Chloe\", \"day\": \"Friday\", \"time\": \"18:1"
+    }
+  ],
+  "load_ms": 6072,
+  "peak_vram_mib": 23263,
+  "mean_tps": 56.8
+}

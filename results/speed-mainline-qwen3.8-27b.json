@@ -1,0 +1,49 @@
+{
+  "model": "qwen3.8-27b",
+  "label": "mainline",
+  "at": "2026-11-21T15:26:24.603Z",
+  "runs": [
+    {
+      "prompt": 1,
+      "wall_ms": 7895,
+      "prompt_n": 43,
+      "predicted_n": 700,
+      "prompt_per_second": 231.8921863118896,
+      "predicted_per_second": 90.7118937048671,
+      "draft_n": 645,
+      "draft_n_accepted": 484,
+      "accept": 0.75,
+      "finish": "length",
+      "sample": "[think 1489ch] ```ts\nfunction mergeIntervals(intervals: [number, number][]): [number, number][] {\n  if (intervals.length === 0) return [];\n\n  const sorted = [...intervals].sor"
+    },
+    {
+      "prompt": 2,
+      "wall_ms": 9037,
+      "prompt_n": 38,
+      "predicted_n": 700,
+      "prompt_per_second": 217.2645252770123,
+      "predicted_per_second": 79.2715994695267,
+      "draft_n": 736,
+      "draft_n_accepted": 453,
+      "accept": 0.615,
+      "finish": "length",
+      "sample": "[think 2893ch] \"\""
+    },
+    {
+      "prompt": 3,
+      "wall_ms": 6917,
+      "prompt_n": 78,
+      "predicted_n": 603,
+      "prompt_per_second": 388.57780523284777,
+      "predicted_per_second": 90.22335525970688,
+      "draft_n": 555,
+      "draft_n_accepted": 417,
+      "accept": 0.751,
+      "finish": "stop",
+      "sample": "[think 1597ch] ```json\n[\n  {\n    \"name\": \"Ana\",\n    \"day\": \"Monday\",\n    \"time\": \"7:30\"\n  },\n  {\n    \"name\": \"Ben\",\n    \"day\": \"Wednesday\",\n    \"time\": \"21:00\"\n  },\n  {\n    \"n"
+    }
+  ],
+  "load_ms": 5994,
+  "peak_vram_mib": 21993,
+  "mean_tps": 86.7
+}

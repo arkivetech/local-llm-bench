@@ -1,0 +1,7 @@
+runs/
+logs/
+models/
+node_modules/
+*.csv
+*.log
+.env

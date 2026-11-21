@@ -1,0 +1,20 @@
+{
+  "model": "qwen3.8-27b",
+  "label": "qwen3.8-27b",
+  "max_tokens": 32768,
+  "task": "t1",
+  "run": 1,
+  "pass": true,
+  "written": [
+    "src/time.ts"
+  ],
+  "wall_ms": 503850,
+  "prompt_tokens": 1514,
+  "completion_tokens": 30924,
+  "reasoning_chars": 110109,
+  "predicted_per_second": 62.19937580171732,
+  "finish": "stop",
+  "tests_pass": 21,
+  "tests_fail": 0,
+  "failed": []
+}

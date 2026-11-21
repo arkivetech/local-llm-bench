@@ -1,0 +1,21 @@
+{
+  "model": "inkling2-mini",
+  "label": "inkling2-mini",
+  "max_tokens": 32768,
+  "task": "t3",
+  "run": 1,
+  "pass": true,
+  "written": [
+    "src/api/validate.ts",
+    "src/api/reminders.ts"
+  ],
+  "wall_ms": 174960,
+  "prompt_tokens": 4112,
+  "completion_tokens": 8445,
+  "reasoning_chars": 22332,
+  "predicted_per_second": 50.16042425216356,
+  "finish": "stop",
+  "tests_pass": 22,
+  "tests_fail": 0,
+  "failed": []
+}

@@ -1,0 +1,22 @@
+{
+  "model": "inkling2-mini",
+  "label": "inkling2-mini",
+  "max_tokens": 16384,
+  "task": "agent",
+  "run": 1,
+  "pass": true,
+  "visible_pass": true,
+  "turns": 23,
+  "tool_calls": 22,
+  "bad_args": 0,
+  "prompt_tokens": 453285,
+  "completion_tokens": 23679,
+  "last_prompt_tokens": 35401,
+  "errors": [],
+  "stop": "done",
+  "final": "TypeScript compiler isn't installed (the project runs on type stripping), and `npm test` passes, so we're done. Summary of what I did:\n\n**1. Failing test fix** — `test/reminders.test.ts` \"PATCH time recomputes nextAt\" failed because `src/api/reminders.ts`'s `update` handler rebuilt the schedule but never recomputed `nextAt`. The PATCH now calls `nextOccurrence` on the new schedule and stores/returns the fresh value.\n\n**2. Quiet hours** (`docs/quiet-hours.md`):\n- `src/time.ts`: `Schedule` gains optional `quietHours?: { start: string; end: string }` (both local 24h \"HH:MM\"). `nextOccurrence` finds the candidate exactly as before, then if the occurrence's local wall-clock time falls inside the window, returns the window's `end` instead: same-day move (`start < end`), next-day move at `end` for occurrences at/after `start` (wrap-midnight case), same-day move for occurrences before `end`, unchanged for the active range, and no quiet window when `start === end`. The moved reminder fires at `end` even if that day isn't a scheduled weekday. `start` inclusive, `end` exclusive.\n- `src/api/reminders.ts`: POST and PATCH accept optional `quietHours` as a string `\"HH:MM-HH:MM\"` (two-digit hours/minutes, valid 24h times). Anything else is rejected with 400 and `{ \"error\": \"quietHours must be HH:MM-HH:MM\" }`. The parsed value is stored on `schedule.quietHours` and returned in the response; `nextAt` is computed with it. PATCH `quietHours: null` removes the window (field absent from `schedule`",
+  "wall_ms": 537735,
+  "tests_pass": 39,
+  "tests_fail": 0,
+  "failed": []
+}

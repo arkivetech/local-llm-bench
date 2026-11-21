@@ -1,0 +1,21 @@
+{
+  "model": "qwen3.8-27b",
+  "label": "qwen3.8-27b",
+  "max_tokens": 32768,
+  "task": "t3",
+  "run": 1,
+  "pass": true,
+  "written": [
+    "src/api/validate.ts",
+    "src/api/reminders.ts"
+  ],
+  "wall_ms": 347651,
+  "prompt_tokens": 3587,
+  "completion_tokens": 23773,
+  "reasoning_chars": 86997,
+  "predicted_per_second": 68.96186882092576,
+  "finish": "stop",
+  "tests_pass": 22,
+  "tests_fail": 0,
+  "failed": []
+}

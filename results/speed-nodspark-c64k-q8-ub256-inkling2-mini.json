@@ -1,0 +1,43 @@
+{
+  "model": "inkling2-mini",
+  "label": "nodspark-c64k-q8-ub256",
+  "at": "2026-11-21T19:11:54.390Z",
+  "runs": [
+    {
+      "prompt": 1,
+      "wall_ms": 12680,
+      "prompt_n": 40,
+      "predicted_n": 700,
+      "prompt_per_second": 283.7583797396517,
+      "predicted_per_second": 55.770490469150296,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 1704ch] ## Implementation\n\n```typescript\nfunction mergeIntervals(intervals: [number, number][]): [number, number][] {\n  if (intervals.length === 0) return [];\n\n  // Sor"
+    },
+    {
+      "prompt": 2,
+      "wall_ms": 12684,
+      "prompt_n": 32,
+      "predicted_n": 700,
+      "prompt_per_second": 241.7813239038617,
+      "predicted_per_second": 55.78748909290739,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 2100ch] A hash table stores key/value pairs in an array of buckets. A hash function maps each key to a bucket index; if two different keys map to the same bucket, that "
+    },
+    {
+      "prompt": 3,
+      "wall_ms": 12747,
+      "prompt_n": 68,
+      "predicted_n": 700,
+      "prompt_per_second": 409.779261553666,
+      "predicted_per_second": 55.65751027633517,
+      "accept": null,
+      "finish": "length",
+      "sample": "[think 2216ch] ```json\n[\n  {"
+    }
+  ],
+  "load_ms": 696,
+  "peak_vram_mib": 22481,
+  "mean_tps": 55.7
+}

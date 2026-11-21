@@ -1,0 +1,22 @@
+{
+  "model": "inkling2-mini",
+  "label": "inkling2-mini-dspark",
+  "max_tokens": 16384,
+  "task": "agent",
+  "run": 1,
+  "pass": true,
+  "visible_pass": true,
+  "turns": 23,
+  "tool_calls": 22,
+  "bad_args": 0,
+  "prompt_tokens": 419984,
+  "completion_tokens": 24624,
+  "last_prompt_tokens": 32935,
+  "errors": [],
+  "stop": "done",
+  "final": "Done. `npm test` passes: 32/32 tests (13 pre-existing, 19 new).\n\n**1. Failing test — cause and fix**\n- `PATCH time recomputes nextAt` failed because `update` in `src/api/reminders.ts` built the updated reminder via `{ ...existing, title, schedule }`, inheriting the stale `nextAt` from creation instead of recomputing it.\n- Fix: recompute `nextAt` from the (possibly new) schedule via `nextOccurrence(schedule, now())` on every PATCH, using a small `nextAtFor` helper shared with `create`.\n\n**2. Quiet hours implementation**\n- `src/time.ts`: `Schedule` gains optional `quietHours?: { start: string; end: string }` (`QuietHours` interface, \"HH:MM\" 24h, local to `timeZone`). `nextOccurrence` still finds the occurrence exactly as before, then returns `moveOutOfQuietHours(...)`:\n  - `start < end`: occurrence with a wall-clock minute in `[start, end)` moves to `end` the same local day.\n  - `start > end` (wraps midnight): `t >= start` moves to `end` the *next* local day; `t < end` moves to `end` the same local day; otherwise unchanged.\n  - `start === end`: no window.\n  - `start` inclusive, `end` exclusive; the moved reminder fires at `end` even if that day isn't a scheduled weekday. Conversion via `zonedTimeToUtc` keeps local-time-zone/DST semantics.\n- `src/api/reminders.ts`: POST and PATCH accept optional `quietHours` string `\"HH:MM-HH:MM\"` (both parts two-digit, valid hours/minutes); anything else → 400 with `{ \"error\": \"quietHours must be HH:MM-HH:MM\" }`. The parsed value is stored on `",
+  "wall_ms": 406296,
+  "tests_pass": 41,
+  "tests_fail": 0,
+  "failed": []
+}

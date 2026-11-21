@@ -1,0 +1,20 @@
+{
+  "model": "inkling2-mini",
+  "label": "inkling2-mini-dspark",
+  "max_tokens": 32768,
+  "task": "t1",
+  "run": 1,
+  "pass": true,
+  "written": [
+    "src/time.ts"
+  ],
+  "wall_ms": 474657,
+  "prompt_tokens": 1689,
+  "completion_tokens": 25134,
+  "reasoning_chars": 71570,
+  "predicted_per_second": 53.207014761340254,
+  "finish": "stop",
+  "tests_pass": 21,
+  "tests_fail": 0,
+  "failed": []
+}

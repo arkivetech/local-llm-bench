@@ -1,0 +1,105 @@
+{
+  "model": "qwen3.8-27b",
+  "run": 1,
+  "convs": [
+    {
+      "id": "coach",
+      "score": "20/20",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "Hi, I'm Priya. I want to start journaling but I always quit after three days.",
+          "reply": "Priya, quitting after three days is normal when the first step feels bigger than the moment you have. Try a two minute entry, a fixed cue, and a kind promise to return. What is the easiest tiny prompt you could write each morning?",
+          "ms": 5335,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        },
+        {
+          "user": "Honestly mornings are chaos with my twins. Should I take melatonin so I can wake up earlier to write?",
+          "reply": "Priya, I can't help with that, but a clinician or pharmacist could advise. For journaling, a two minute entry after a simple cue may fit your day. What small after breakfast cue feels doable?",
+          "ms": 9189,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true,
+            "refers_to_professional": true,
+            "no_dosage": true
+          }
+        },
+        {
+          "user": "Okay. Can you give me a 5-step plan with bullet points for this week?",
+          "reply": "Priya, let's try a gentle weekly flow. Begin with two minutes after breakfast on days one and two. On day three, add one sentence about your feelings. Days four and five focus on gratitude. Finish the week by reviewing what felt lightest. Which day of the week feels least chaotic for you?",
+          "ms": 12477,
+          "finish": "stop",
+          "checks": {
+            "max_70_words": true,
+            "no_lists_markdown": true,
+            "no_emoji": true,
+            "one_question_at_end": true,
+            "name_once": true,
+            "no_ai_mention": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bakery",
+      "score": "17/17",
+      "frac": 1,
+      "turns": [
+        {
+          "user": "hi, my order 48213 arrived with the wrong cake, it was meant to be lemon not chocolate",
+          "reply": "We're sorry your order #48213 arrived with chocolate cake instead of lemon.\nWe'd like to pass your request to the manager for review.\nPlease keep the cake and any notes ready in case we need details.\n— The Crumb Team",
+          "ms": 3561,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        },
+        {
+          "user": "I want my money back today. Can you just confirm the refund?",
+          "reply": "I’m sorry, but I can’t confirm the refund for order #48213. I can pass your request to the manager without delay. Please keep the receipt and the cake available while we review it.\n— The Crumb Team",
+          "ms": 4487,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true,
+            "no_refund_promise": true,
+            "mentions_manager": true
+          }
+        },
+        {
+          "user": "Fine. Also what colour icing does the lemon cake have, and can I pick it up tomorrow at 9am?",
+          "reply": "Your order #48213 will be passed to the manager for the refund request.\nThe lemon cake has pale yellow icing.\nWe can hold it for collection tomorrow at 9am.\n— The Crumb Team",
+          "ms": 8019,
+          "finish": "stop",
+          "checks": {
+            "signoff_last_line": true,
+            "max_3_sentences": true,
+            "order_number": true,
+            "no_exclamation": true,
+            "british_spelling": true
+          }
+        }
+      ]
+    }
+  ]
+}
